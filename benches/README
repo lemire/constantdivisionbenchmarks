@@ -1,0 +1,17 @@
+
+Run simplified_primes_benches.sh to compile and run
+a prime-finding benchmark that was originally written
+in C++ for use with libdivide.
+
+OFK rewrote it in C, to simplify and allow easier checks
+of the assembly code (eg verify that the compiler has not
+vectorized one option.) Does not have internal timing code;
+run with perf tools instead.
+
+Code was cloned for each of the various divisibility-check
+approaches, to keep each individual program short.
+
+Added a Granlund/Montgomery divisibility option to be a
+more fair competition to the Lemire approach. This application
+guarantees we are checking only odd divisors, a best-case
+scenario for Granlund&Montgomery.
