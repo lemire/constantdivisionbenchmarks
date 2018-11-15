@@ -52,7 +52,7 @@ static inline uint64_t computeM_s32(int32_t d) {
 
 // fastmod computes (a % d) given precomputed M,
 // you should pass the absolute value of d
-static inline int32_t fastmod_s32(int32_t a, uint64_t M, int32_t positive_d) {
+static inline int32_t fastmod_s32(int32_t a, uint64_t M, uint32_t positive_d) {
   uint64_t lowbits = M * a;
   int32_t highbits = ((__uint128_t)lowbits * positive_d) >> 64;
   return highbits - ((positive_d - 1) & (a >> 31));

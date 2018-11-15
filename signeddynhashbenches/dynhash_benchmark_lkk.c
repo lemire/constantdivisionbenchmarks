@@ -2,7 +2,7 @@
 
 
 
-static inline uint32_t fastmodD(int32_t a, uint64_t M, int32_t d) {
+static inline uint32_t fastmodD(int32_t a, uint64_t M, uint32_t d) {
     uint64_t lowbits = M * a; // high 64 bits of this mult is the division
     // we use the low bits to retrieve the modulo
     int32_t highbits = ((__uint128_t) lowbits * (uint64_t) d) >> 64;
