@@ -5,7 +5,9 @@ Benchmarks for constant-division problems (not a library! for research only!)
 
 - A bash shell and a Linux-like system.
 - It helps to have the GCC and clang compilers installed. The scripts that ends with gcc.sh require GCC whereas the scripts that ends with clang.sh require clang.
-- Some specific tests require a Linux machine with a working ``perf`` command, but most tests run fine on other operating systems.
+- Some specific tests require a Linux machine with a working ``perf`` command, but most tests run fine on other operating systems. You can generally install `perf` on Linux with commands such as `sudo apt-get install linux-tools` or `sudo apt-get install linux-perf`. 
+
+
 
 # Usage (requires just a working compiler)
 

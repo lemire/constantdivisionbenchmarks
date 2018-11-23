@@ -2,7 +2,7 @@
 TIMEFORMAT=%R
 LIBDIV_OPTS="libdivide libdivide_branchless"  #x64 where we have libdivide
 PERFCMD="time" # could be perf stat
-CCSTRINGS=("clang -march=native -O3" )
+CCSTRINGS=("clang -O3" )
 case `hostname` in
        knightslanding.licef.ca)
      ;;

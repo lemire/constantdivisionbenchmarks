@@ -2,7 +2,7 @@
 TIMEFORMAT=%R
 LIBDIV_OPTS="libdivide libdivide_branchless"  #x64 where we have libdivide
 PERFCMD="time" # could be perf stat
-CCSTRINGS=("gcc -march=native -O3" )
+CCSTRINGS=("gcc -O3" )
 SIGNED=$1
 CONSTANT=$2
 
